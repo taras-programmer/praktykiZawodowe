@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Одно слово -->
+        <EditText
+            android:id="@+id/editSlowo"
+            android:hint="Słowo(niemiecki/angielski)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editTlumaczenie"
+            android:hint="Tłumaczenie(polski)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editGrupa"
+            android:hint="Grupa (opcjonalnie)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonDodaj"
+            android:text="Dodaj słowo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Добавление списка слов -->
+        <EditText
+            android:id="@+id/editLista"
+            android:hint="Dodaj wiele słów (np. Autopanne - awaria samochodu)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonDodajListe"
+            android:text="Dodaj listę słów"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Остальные элементы -->
+        <Spinner
+            android:id="@+id/spinnerGrupy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonStartTestu"
+            android:text="Rozpocznij test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewPytanie"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editOdpowiedz"
+            android:hint="Wpisz tłumaczenie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonSprawdz"
+            android:text="Sprawdź"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewWynik"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonPokaz"
+            android:text="Pokaż wszystkie słowa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonUkryj"
+            android:text="Ukryj listę słów"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonUsunWszystkie"
+            android:text="Usuń wszystkie słowa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/containerWszystkie"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>
